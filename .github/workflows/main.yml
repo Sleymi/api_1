@@ -38,7 +38,9 @@ jobs:
       - name: build docker image
         run: |
           echo Add other actions to build,
+          python src/test.py
           docker build -t api-test .
           docker run -d -p 5000:5000 api-test
+          python src/test.py
           curl http://127.0.0.1:5000/video/100
           echo test, and deploy your project.

@@ -39,7 +39,7 @@ jobs:
         run: |
           echo start,
           curl 'https://api.ipify.org?format=json'
-          ls -a
+          ls ..
           #cat ~/.ssh/id_rsa
           echo done
 

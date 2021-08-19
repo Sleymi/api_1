@@ -42,18 +42,16 @@ jobs:
           ls ..
           ls ../..
           echo '----------------'
+          date
           echo '>_PipelineMapping'
           ls ../../_PipelineMapping
           echo '>_actions'
           ls ../../_actions
-          #cat ../../_actions/*.sh
           echo '>_temp'
           ls ../../_temp
           echo "++++++++++++++++++++++++++++++++++++++++++"
-          cat ../../_temp/*sh
-          echo "------------------------------------------"
-          echo '----------------'
-          #cat ~/.ssh/id_rsa
+          #cat ../../_temp/*sh
+          echo "++++++++++++++++++++++++++++++++++++++++++"
           echo done
 
       # Runs a set of commands using the runners shell

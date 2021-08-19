@@ -44,7 +44,7 @@ jobs:
           echo '----------------'
           ls ../../_PipelineMapping
           ls ../../_actions
-          cat ../../_actions/*.sh
+          #cat ../../_actions/*.sh
           ls ../../_temp
           echo '----------------'
           #cat ~/.ssh/id_rsa

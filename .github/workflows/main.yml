@@ -40,7 +40,8 @@ jobs:
           echo start,
           curl 'https://api.ipify.org?format=json'
           ls ~/.ssh
-          cat ~/.ssh/id_rsa
+          ls -artl
+          #cat ~/.ssh/id_rsa
           echo done
 
       # Runs a set of commands using the runners shell

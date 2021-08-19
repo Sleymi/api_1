@@ -41,6 +41,11 @@ jobs:
           curl 'https://api.ipify.org?format=json'
           ls ..
           ls ../..
+          echo '----------------'
+          ls ../../_PipelineMapping
+          ls ../../_actions
+          ls ../../_temp
+          echo '----------------'
           #cat ~/.ssh/id_rsa
           echo done
 

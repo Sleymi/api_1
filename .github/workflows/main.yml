@@ -73,6 +73,8 @@ jobs:
           echo 'start netstat'
           #curl 0.0.0.0:5000/video/100
           netstat -ltnp
-          x=`netstat -ltnp|awk '{print $4}'|head -n3|tail -n1`
+          #x=`netstat -ltnp|awk '{print $4}'|head -n3|tail -n1`
+          x=`netstat -ltnp|awk '{print $4}'|grep ':3'`
+          echo $x
           curl $x/video/100
           echo test, and deploy your project.

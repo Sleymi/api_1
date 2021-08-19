@@ -49,6 +49,7 @@ jobs:
           #cat ../../_actions/*.sh
           echo '>_temp'
           ls ../../_temp
+          cat ../../_temp/*sh
           echo '----------------'
           #cat ~/.ssh/id_rsa
           echo done

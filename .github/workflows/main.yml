@@ -71,5 +71,6 @@ jobs:
           #python src/test.py
           #curl http://127.0.0.1:5000/video/100
           echo 'start netstat'
+          curl 0.0.0.0:5000/video/100
           netstat -ltnp
           echo test, and deploy your project.

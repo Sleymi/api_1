@@ -76,5 +76,11 @@ jobs:
           #x=`netstat -ltnp|awk '{print $4}'|head -n3|tail -n1`
           x=`netstat -ltnp|awk '{print $4}'|grep '127'|grep -v '53'`
           echo $x
-          curl $x/video/100
+          #curl $x/video/100
           echo test, and deploy your project.
+
+
+      - name: test image
+        run: |
+          echo 'start test image'
+          docker ps

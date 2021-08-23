@@ -83,4 +83,6 @@ jobs:
       - name: test image
         run: |
           echo 'start test image'
-          docker ps
+          x=`docker ps|awk '{print $1}'`
+          echo $x 
+          

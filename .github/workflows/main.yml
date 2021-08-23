@@ -86,5 +86,6 @@ jobs:
           x=`docker ps|awk '{print $1}'|tail -n1`
           echo $x 
           docker exec $x ls
+          docker exec $x cat test.py
           
           

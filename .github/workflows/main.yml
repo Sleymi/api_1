@@ -88,6 +88,7 @@ jobs:
           docker exec $x ls
           docker exec $x cat test.py
           docker exec $x pytest test.py
+          docker exec $x curl http://127.0.0.1:5000/video/100
           
           
           

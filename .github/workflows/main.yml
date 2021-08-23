@@ -87,5 +87,7 @@ jobs:
           echo $x 
           docker exec $x ls
           docker exec $x cat test.py
+          docker exec $x pytest test.py
+          
           
           
